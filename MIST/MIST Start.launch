@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="at.bachmann.cdt.gdb.launch.moduleLaunchType">
+<stringAttribute key="configFile" value=""/>
+<booleanAttribute key="installPermanently" value="false"/>
+<intAttribute key="lineNumber" value="0"/>
+<mapAttribute key="moduleConfig"/>
+<stringAttribute key="moduleFilename" value="Bachmann_4.1.2_Configuration/mist.m"/>
+<intAttribute key="moduleIdentity" value="0"/>
+<stringAttribute key="moduleInstanceName" value="MIST"/>
+<stringAttribute key="org.eclipse.cdt.dsf.gdb.DEBUG_NAME" value="D:\bachmann\SolutionCenter\V2.30MS2\cutils\GnuTools-4.1.2\bin\gdb.exe"/>
+<stringAttribute key="org.eclipse.cdt.dsf.gdb.GDB_INIT" value="D:\bachmann\SolutionCenter\V2.30MS2\cutils\GnuTools-4.1.2\bin\.gdbinit"/>
+<stringAttribute key="org.eclipse.cdt.dsf.gdb.HOST" value="127.0.0.1"/>
+<booleanAttribute key="org.eclipse.cdt.dsf.gdb.NON_STOP" value="true"/>
+<stringAttribute key="org.eclipse.cdt.dsf.gdb.PORT" value="0"/>
+<booleanAttribute key="org.eclipse.cdt.dsf.gdb.REMOTE_TCP" value="true"/>
+<booleanAttribute key="org.eclipse.cdt.dsf.gdb.UPDATE_THREADLIST_ON_SUSPEND" value="true"/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="remote"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value=""/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value=""/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/MIST"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<booleanAttribute key="overrideConfig" value="false"/>
+<stringAttribute key="profileName" value=""/>
+<stringAttribute key="projectName" value="MIST"/>
+<booleanAttribute key="sendEOI" value="true"/>
+<stringAttribute key="targetName" value=""/>
+<booleanAttribute key="targetSelectionOnLaunch" value="false"/>
+</launchConfiguration>

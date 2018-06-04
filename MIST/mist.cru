@@ -1,0 +1,92 @@
+MODUL mist
+VERSION 102
+PROPERTY RECONF
+ROOT
+    (ControlTask)
+        CycleTime       = REAL32(0.2 .. 1000.0)[10.0]
+        Priority        = UINT32(20 .. 255)[90]
+        WatchdogRatio   = UINT32(0..100)[0]
+        TimeBase        = STRING("Tick" | "Sync")["Tick"]
+END_ROOT
+
+DESC(049)
+    ControlTask               = "Parameter fuer Task 'Control'"
+    ControlTask.CycleTime     = "Zykluszeit des Tasks in ms, 0.2ms .. 1000.0ms"
+    ControlTask.Priority      = "Prioritaet des Tasks, 20(=beste) .. 255(=schlechteste)"
+    ControlTask.WatchdogRatio = "Verhaeltnis Watchdogzeit/Zykluszeit (0=kein Watchdog)"
+    ControlTask.TimeBase      = "Basis-Timer fuer Zykluszeit (Tick / Sync)"
+END_DESC
+
+DESC(001)
+    ControlTask               = "Parameters for task 'Control'"
+    ControlTask.CycleTime     = "Cycle time of task in ms, 0.2ms .. 1000.0ms"
+    ControlTask.Priority      = "Priority of task, 20(=best) .. 255(=worst)"
+    ControlTask.WatchdogRatio = "Ratio watchdog time / cycle time (0=no watchdog)"
+    ControlTask.TimeBase      = "Base timer for cycle time (Tick / Sync)"
+END_DESC
+
+HELP(049)
+    "Allgemein:"
+    "    Dieses SW-Modul bietet Standard-M1-Modul Behandlung, Management"
+    "    fuer mehrere Tasks, Tick oder Sync basierende Zykluszeitverwaltung"
+    "    und SVI Server an."
+    "    Zusaetzlich koennen Demos von MIO, virtuelle SVI-Variablen,"
+    "    SVI Client und SMI Server ausgewaehlt werden."
+    ""
+    "ControlTask:"
+    "    Die Zykluszeit und sonstige Parameter fuer einen bereitgestellten"
+    "    Default-Applikationstask koennen hier eingestellt werden."
+    "    (Der Parameter Priority in BaseParms hat keinen Einfluss auf dem"
+    "    Applikationstask!)"
+    ""
+    "MioDemo:"
+    "    Mit zusaetzlicher MioDemo-Option erzeugt dieses SW-Modul"
+    "    ein Tagfahrlicht auf einer DO2xx oder DIO2xx. Damit die"
+    "    Funktion des Programmes gut sichtbar ist, sollten so"
+    "    viele Kanaele wie moeglich als Ausgaenge konfiguriert werden."
+    "    Das SW-Modul stellt sich automatisch auf die vorhandene"
+    "    Kanalanzahl ein."
+    "    Um die Verwendung des SVI-Interfaces zu erklaeren"
+    "    koennen einige Parameter ueber SVI eingestellt werden."
+    "    Per SVI kann online das Tagfahrlicht ein-/ausgeschaltet"
+    "    und einige Parameter koennen ausgelesen werden."
+    ""
+    "Defaultwerte:"
+    "    Wird das SW-Modul ohne Konfiguration angelegt, so wird die"
+    "    Zykluszeit fuer das Default-Applikationstask auf 10 ms und"
+    "    die Taskprioritaet auf 90 gestellt. Das SW-Watchdog ist per"
+    "    Default abgeschaltet und die Zykluszeit wird basiert auf Tick"
+    "    verwaltet. Und das Modul erwartet mit Digitalausgaengen auf"
+    "    Kartennummer 4."
+END_HELP
+
+HELP(001)
+    "Introduction:"
+    "    This software module provides standard M1 module handling,"
+    "    management for multiple tasks, tick or sync based cycle time"
+    "    management and SVI server."
+    "    In addition, demos of MIO, virtual SVI variables, SVI client"
+    "    and SMI server can be selected."
+    ""
+    "ControlTask:"
+    "    The cycle time and other properties of a default application"
+    "    task can be adjusted here."
+    "    (The priority parameter in BaseParms does not affect the"
+    "    application task!)"
+    ""
+    "MioDemo:"
+    "    With additional MioDemo option this software module generates"
+    "    a chaser light on a DO2xx or DIO2xx. To view this function"
+    "    clearly, as many channels as possible should be enabled at"
+    "    output. The software module adjusts to the available channel"
+    "    number automatically."
+    "    To explain the usage of the SVI interfaces, several parameters"
+    "    can be adjusted via SVI. The chaser light can be switched on/off"
+    "    online via SVI and some parameters can be read out."
+    ""
+    "Default values:"
+    "    The default cycle time for the application task is 10 ms, and"
+    "    the task priority is 90. The software watchdog is per default"
+    "    disabled and the cycle time is managed based on tick. The module"
+    "    expects digital outputs on card number 4."
+END_HELP

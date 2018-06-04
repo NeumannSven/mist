@@ -1,0 +1,31 @@
+;Script for MBIND to build mist.m
+;
+;Header
+;
+ModuleType        = VXW
+Version           = mist.ver
+Reentrant         = FALSE
+NoOnlineConfig    = FALSE
+NoOnlineInstall   = FALSE
+NoOnlineDeinstall = FALSE
+DebugInfo         = TRUE
+ErrorTolerant     = FALSE
+NoAutoInstall     = FALSE
+SystemModule      = FALSE
+;
+;Object-Code
+;
+ObjectType        = OBJ
+ObjectMode        = NORMAL
+Version           = mist.ver
+ObjectName        = mist.o
+;
+;Configuration-Rule
+;
+ObjectType        = BCRU
+ObjectName        = mist.bcr
+;
+;Source-Code
+;
+;ObjectType        = C-ZIP
+;ObjectName        = mist.tgz
