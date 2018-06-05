@@ -125,7 +125,7 @@ unsigned char tokenizer(char *line){
     return 0;
 }
 
-int ps_main(void) {
+int mist(void) {
    char pswd[MAX];
    int exitFlag = 0;
 
